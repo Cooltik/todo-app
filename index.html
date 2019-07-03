@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo Application</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-header">
+            <h1>TODO Application</h1>
+        </div>
+
+        <div class="todo-add">
+            <div class="row">
+                <label for="name">
+                <span>What to do:</span>
+                <input id="name" type="text">
+            </label>
+            </div>
+        <div class="row">
+            <label for="time">
+                <span>Time:</span>
+                <input id="time" type="datetime-local">
+            </label>
+        </div>
+            <button id="addTodo" class="btn" onclick="addClick()">Add</button>
+        </div>
+
+        <div class="todo-list">
+            <span id="emptyList">Todo list is empty</span>
+            <ul id="todoList">
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/todo.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

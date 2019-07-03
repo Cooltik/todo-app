@@ -1,0 +1,66 @@
+.input-edit,
+.btn-edit,
+.edit .name,
+.edit .btn-delete {
+    display: none;
+}
+
+.edit .input-edit,
+.edit .btn-edit {
+    display: block;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.todo-add {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.todo-add .btn {
+    width: 200px;
+}
+
+.row {
+    padding: .25rem 0;
+}
+
+ .row, .row label {
+     display: flex;
+     width: 100%;
+ }
+
+.row label span {
+    display: block;
+    width: 100px;
+}
+
+.row label input {
+    flex-grow: 1;
+}
+
+.todo-list ul {
+    padding: 0;
+}
+
+.todo-list li {
+    display: flex;
+}
+
+.todo-list li.completed span {
+    text-decoration: line-through;
+}
+
+.todo-list li span,
+.todo-list li .input-edit {
+    flex-grow: 1;
+}
+
+.todo-list li .input-edit {
+    margin-right: 10px;
+}
